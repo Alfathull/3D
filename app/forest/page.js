@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Spline from '@splinetool/react-spline';
 
-export default function Home() {
+export default function Forest() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -16,11 +16,9 @@ export default function Home() {
   return (
     <>
       {isLoading ? (
-        <p className="justify-center items-center h-full w-full">Loading...</p>
+        <p className="justify-center items-center">Loading...</p>
       ) : (
-        <>
-        <Spline scene="https://prod.spline.design/Q8ogpFmZ3LL-DlZO/scene.splinecode" />
-        </>
+        <Spline scene="https://prod.spline.design/ltehhOqzYtFfdCxw/scene.splinecode" />
       )}
     </>
   );
